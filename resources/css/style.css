@@ -21,7 +21,11 @@ html {
 }
 
 .image-container {
-  overflow: hidden;
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    overflow: hidden;
 }
 
 .image-container img {
@@ -227,7 +231,6 @@ header .mobile {
   justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
-  height:635px;
 
 }
 
@@ -236,22 +239,24 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
-
 }
-.feature .content{margin-top:40px;
-                   margin-bottom:40px}
+/*.feature {margin-top:auto;
+                   margin-bottom:auto}
+*/
 
 
-
-
-.feature .image-container {
+ .image-container {
   width: 90%;
   height: 65%;
   margin: 0 auto;
+  padding-bottom: 40px;
   overflow:hidden;
 }
-.image-container img{display:block;
-                     max-width:100%;}
+.image-container img{
+  display:block;
+  height: 100%;
+  width:100%;
+}
 
 .feature h2 {
   padding-bottom: .5rem;
@@ -286,7 +291,7 @@ header .mobile {
     padding: 0;
   }
 
-  .feature {flex-grow:1;
+  .feature {flex:1;
     margin: 0px 1.25rem;
 
   }
@@ -357,15 +362,17 @@ header .mobile {
 /* Quotes Section */
 
 #quotes-section {
+
   background-color: #f3f3f3;
 
 }
 
-#quotes-section content {
+#quotes-section .content {
+
   padding: 5rem 0;
 }
 
-#quotes-section .center {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
